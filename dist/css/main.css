@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfdfdf;
+  color: #0f0f0f;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0.5rem;
+}
+body a {
+  color: #0011ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+body a:hover, body a:focus {
+  border-bottom: 2px solid #0011ff;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+}
+
+input {
+  padding: 4px 15px 4px 5px;
+}
+
+#button {
+  display: inline-block;
+  text-align: center;
+  background-color: #2bb800;
+  color: #ffffff;
+  width: 100px;
+  margin: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  padding: 5px;
+  color: #000000;
+}
+
+ol li:nth-child(even) {
+  background: #dfdfdf;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.delete {
+  display: none;
+}
+
+li > .crossOutButton {
+  background: none;
+  border: none;
+  float: right;
+  color: #ff0000;
+  font-weight: 800;
+}/*# sourceMappingURL=main.css.map */
