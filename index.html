@@ -4,27 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/css/main.css" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="dist/css/main.min.css" />
     <title>minimaList</title>
   </head>
   <body>
-    <div class="container">
-      <div class="center">
-        <h2>minimaList App</h2>
+    <div class="wrapper">
+      <header class="page-header">
+        <img src="img/logo.svg" alt="Logo Pokédex.js" class="logo" />
+        <h1>Just another Smart To-Do List app!</h1>
+      </header>
+
+      <main class="page-index">
         <p>
-          <em>
-            Double click to mark an item off, click on "X" to delete an item,
-            and drag items to reorder.
-          </em>
+          Double click to mark an item off, click on "X" to delete an item, and
+          drag items to reorder.
         </p>
 
         <form name="toDoList">
           <input type="text" name="ListItem" id="input" />
         </form>
-
         <div onclick="newItem()" id="button">To Do!</div>
-      </div>
-      <ol id="list"></ol>
+
+        <div id="modal-container">
+          <div class="modal">
+            <button class="modal-close">&times;</button>
+            <h2>Oops! Something went wrong</h2>
+            <p>You must write something to put on your to-do list!</p>
+          </div>
+        </div>
+        <ol id="list"></ol>
+      </main>
+
+      <footer class="page-footer">
+        <p>
+          Made with ❤ by
+          <a href="https://gregoriodelasheras.github.io/" target="_blank"
+            >Francisco Gregorio de las Heras</a
+          >
+        </p>
+        <p>
+          Latest version:
+          <a
+            href="https://github.com/gregoriodelasheras/minima-list/releases/latest"
+            target="_blank"
+            >v.0.1.1</a
+          >
+        </p>
+      </footer>
     </div>
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
