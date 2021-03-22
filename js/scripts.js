@@ -5,6 +5,7 @@ function newItem() {
   let inputValue = $('#input').val();
   let modalContainer = $('#modal-container');
   li.append(inputValue);
+  $('#input').val('');
 
   // Input Validation
   inputValue === '' ? showMessage() : ol.append(li);
@@ -38,7 +39,7 @@ function newItem() {
   });
 
   // Strike an item from the list
-  li.on('click', () => {
+  li.on('dblclick', () => {
     li.toggleClass('strike');
   });
 
