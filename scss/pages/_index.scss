@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as v;
+
+.page-index {
+  form {
+    display: inline-block;
+    input {
+      padding: 4px 15px 4px 5px;
+      margin: 1rem 0;
+    }
+  }
+
+  ol {
+    padding-left: 20px;
+    text-align: left;
+    li {
+      padding: 5px;
+      color: #000000;
+    }
+    li:nth-child(even) {
+      background: v.$white2;
+    }
+    li:hover {
+      cursor: pointer;
+    }
+    li > .crossOutButton {
+      background: none;
+      border: none;
+      float: right;
+      color: v.$red;
+      font-weight: 800;
+    }
+    .delete {
+      display: none;
+    }
+  }
+}

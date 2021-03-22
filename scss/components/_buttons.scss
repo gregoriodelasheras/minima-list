@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+#button {
+  display: inline-block;
+  text-align: center;
+  background-color: v.$green;
+  color: v.$white1;
+  width: 100px;
+  margin: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

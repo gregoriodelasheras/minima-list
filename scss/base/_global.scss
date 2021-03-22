@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: v.$white2;
+  color: v.$black;
+  font-family: v.$text-font-stack;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0.5rem;
+  a {
+    color: v.$blue;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid v.$blue;
+    }
+  }
+}
+
+.wrapper {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: v.$white1;
+  border-radius: 5px;
+}
