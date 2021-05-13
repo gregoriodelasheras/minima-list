@@ -1,3 +1,4 @@
+<!-- PROJECT LOGO -->
 <p align="center">
   <a href="https://gregoriodelasheras.github.io/pokedex-js/">
     <img src="https://user-images.githubusercontent.com/77192223/118174368-02e5a880-b42f-11eb-9566-1eaadf3459a6.png" alt="Logo" width="600">
